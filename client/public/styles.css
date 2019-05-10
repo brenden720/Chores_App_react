@@ -1,25 +1,30 @@
 .container {
   display: flex;
+  /* max-height: 20px; */
+  /* height: auto; */
 }
 
 .user {
-  flex: 1 1 100%;
-  justify-content: center;
+  flex: 1;
+  /* justify-content: center; */
   display: flex;
   flex-direction: column;
-
+  padding: 5px;
 }
 
 .names {
   flex: 1 1 10px;;
   /* background-color: grey; */
   border: 2px solid black;
-  margin: 10px;
-  max-height: 10vh;
+  justify-content: space-between;
+  max-height: 20px;
+  min-height: 20px;
+  text-align: center;
 }
 
 .task {
   display: flex;
+  text-align: center;
 }
 
 .arrow {
@@ -38,24 +43,25 @@
 }
 
 .names0 {
-  background-color: red;
+  background-color: rgb(82.3%, 47.7%, 1.5%);
 }
 
 .names1 {
-  background-color: grey;
+  background-color: rgb(16.7%, 58.2%, 87.8%);
 }
 
 .names2 {
-  background-color: green;
+  background-color: rgb(195, 99, 243);
 }
 
 .names3 {
-  background-color: yellow;
+  background-color: rgb(33, 243, 29);
 }
 
 .task {
   border: 2px solid black;
-  margin: 5px;
+  /* margin: 5px; */
+  margin: 5px 0 5px 0;
 }
 
 
