@@ -4,19 +4,19 @@ import Task from './task';
 const storage = [
   {
     name: 'Brenden',
-    tasks: ['Study', 'Sleep'],
+    tasks: ['study', 'sleep'],
   },
   {
     name: 'Tony',
-    tasks: ['Study', 'Work'],
+    tasks: ['study', 'work'],
   },
   {
     name: 'Warren',
-    tasks: ['Work', 'Clean'],
+    tasks: ['work', 'clean'],
   },
   {
     name: 'Jen',
-    tasks: ['Sleep', 'Work'],
+    tasks: ['sleep', 'work'],
   }
 ];
 
@@ -37,13 +37,14 @@ class App extends React.Component {
   }
 
   addTask(name) {
-    const task = prompt('New task: ');
+    const task = prompt('New task: ').toLowerCase();
     if (!task) return;
     storage.map(content => {
       if (content.name === name) {
+        
         return ({
           name,
-          tasks: content.tasks.push(task),
+          tasks: content.tasks.includes(task) ? content.tasks : content.tasks.push(task),
         });
       }
     });
