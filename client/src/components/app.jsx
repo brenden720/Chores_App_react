@@ -38,6 +38,7 @@ class App extends React.Component {
 
   addTask(name) {
     const task = prompt('New task: ');
+    if (!task) return;
     storage.map(content => {
       if (content.name === name) {
         return ({
