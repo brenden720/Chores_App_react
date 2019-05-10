@@ -59,14 +59,19 @@ class App extends React.Component {
         return task !== currentTask;
       });
       storage[currentidx].tasks = newTasks;
-      storage[currentidx - 1].tasks.push(task);
+      if (!storage[currentidx - 1].tasks.includes(task)) {
+        storage[currentidx - 1].tasks.push(task);
+
+      }
     }
     if (direction === 'right') {
       const newTasks = storage[currentidx].tasks.filter(currentTask => {
         return task !== currentTask;
       });
       storage[currentidx].tasks = newTasks;
-      storage[currentidx + 1].tasks.push(task);
+      if (!storage[currentidx + 1].tasks.includes(task)) {
+        storage[currentidx + 1].tasks.push(task);
+      }
     }
     this.setState({
       ['users']: storage,
