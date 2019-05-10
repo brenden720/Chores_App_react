@@ -1,20 +1,16 @@
 .container {
   display: flex;
-  /* max-height: 20px; */
-  /* height: auto; */
 }
 
 .user {
   flex: 1;
-  /* justify-content: center; */
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
 .names {
-  flex: 1 1 10px;;
-  /* background-color: grey; */
+  flex: 1;
   border: 2px solid black;
   justify-content: space-between;
   max-height: 20px;
@@ -36,13 +32,14 @@
   visibility: visible;
 }
 
+/* For left arrows on first user and right arrows on last user */
 .arrowHidden {
   flex: 1;
   visibility: hidden;
 }
 
 .value {
-  flex: 10;
+  flex: 20;
   justify-content: space-between;
 }
 
@@ -61,16 +58,3 @@
 .names3 {
   background-color: rgb(33, 243, 29);
 }
-
-.task {
-
-}
-
-
-
-
-
-
-
-
-
