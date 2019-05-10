@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+}
+
+.user {
+  flex: 1 1 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.names {
+  flex: 1 1 10px;;
+  /* background-color: grey; */
+  border: 2px solid black;
+  margin: 10px;
+  max-height: 10vh;
+}
+
+.task {
+  display: flex;
+}
+
+.arrow {
+  flex: 1;
+  visibility: visible;
+}
+
+.arrowHidden {
+  flex: 1;
+  visibility: hidden;
+}
+
+.value {
+  flex: 10;
+  justify-content: space-between;
+}
+
+.names0 {
+  background-color: red;
+}
+
+.names1 {
+  background-color: grey;
+}
+
+.names2 {
+  background-color: green;
+}
+
+.names3 {
+  background-color: yellow;
+}
+
+.task {
+  border: 2px solid black;
+  margin: 5px;
+}
+
+
+
+
+
+
+
+
+
