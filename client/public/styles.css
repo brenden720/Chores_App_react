@@ -9,7 +9,7 @@
   /* justify-content: center; */
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 10px;
 }
 
 .names {
@@ -25,6 +25,10 @@
 .task {
   display: flex;
   text-align: center;
+  border: 2px solid black;
+  margin: 5px 0 5px 0;
+  max-height: 20px;
+  min-height: 20px;
 }
 
 .arrow {
@@ -59,9 +63,7 @@
 }
 
 .task {
-  border: 2px solid black;
-  /* margin: 5px; */
-  margin: 5px 0 5px 0;
+
 }
 
 
